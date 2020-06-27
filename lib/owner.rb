@@ -43,13 +43,13 @@ class Owner
   def sell_pets
     sell.cats.each do |cat|
       self.cats.delete(cat)
-      cat.owner = nil
       cat.mood = "nervous"
+      cat.owner = nil
     end
     self.dogs.each do |dog|
       self.dogs.delete(dog)
-      dog.owner = nil
-      dog.mood = "nervous"
+      dog.owner = "nervous"
+      dog.mood = nil    
     end
   end
   
