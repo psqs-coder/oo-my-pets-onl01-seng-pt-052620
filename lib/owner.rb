@@ -45,14 +45,14 @@ class Owner
       self.cats.delete(cat)
       cat.owner = nil
       cat.mood = "nervous"
-  end
+    end
   
   def sell_pets
     sell.dogs.each do |dog|
       self.dogs.delete(dog)
       dog.owner = nil
       dog.mood = "nervous"
-  end
+    end
   
   def list_pets
     number_of_dogs = self.dogs.count
